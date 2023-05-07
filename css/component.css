@@ -126,3 +126,44 @@
 #footer-bottom ul li a:hover{
     text-decoration: underline;
 }
+
+/*--------------Category-------------*/
+
+#explore-category{
+    padding: 0px 120px;
+    height: 70px;
+    background-color: var(--color-white-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#explore-category ul {
+     display: flex;
+     height: 100%;
+}
+
+#explore-category ul li{
+    display: flex;
+    align-items: center;
+}
+
+#explore-category ul li img{
+    width:20px;
+    height: 20px;
+}
+#explore-category ul li a{
+    color: var(--color-blue-light);
+    margin-left: 6px;
+    font-size: 16px;
+}
+
+#explore-category ul li a:hover{
+    color: var(--color-blue-dark);
+}
+.explore-seperator{
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-blue-light-text);
+    margin: 0px 15px;
+}

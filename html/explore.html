@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/explore.css">
-    <link rel="stylesheet" href="/css/component.css">
     <title>Keşfet</title>
 </head>
 <body>
@@ -19,6 +18,7 @@
                 <input id="header-search-textbox" type="search" autocomplete="off" placeholder="Arama...">
             </form>
         </div>
+        <!-- HEADER LİNKLER -->
         <div id="header-links">
             <ul id="header-list">
                 <li id="header-links-homepage">
@@ -28,8 +28,170 @@
                 <li id="header-links-register"><a href="#">Kaydol</a></li>
             </ul>
         </div>
+        <!--HEADER DROPDOWN LİST-->
+        <div class="header-dropdown-menu">
+            <div class="header-dropdown-close">
+                <a href="#">
+                    <img src="/img/avatar/profile-1.png" alt="profil avatar">
+                    <div>Hasan Dursun</div>
+                    <img src="/img/icon/other/down-arrow.svg" alt="aşağı yön ikonu">
+                </a>
+            </div>
+            <div class="header-dropdown-open">
+                <ul>
+                    <li><a href="#"><img src="/img/icon/menu/profile.svg" alt=""><span>Profil</span></a></li>
+                    <li><a href="#"><img src="/img/icon/menu/add.svg" alt=""><span>İlan Oluştur</span></a></li>
+                    <li><a href="#"><img src="/img/icon/menu/advert.svg" alt=""><span>İlanlarım</span></a></li>
+                    <li><a href="#"><img src="/img/icon/menu/basket.svg" alt=""><span>Siparişlerim</span></a></li>
+                    <li><a href="#"><img src="/img/icon/menu/offer.svg" alt=""><span>Tekliflerim</span></a></li>
+                    <li><a href="#"><img src="/img/icon/menu/bell.svg" alt=""><span>Bildirimler</span></a></li>
+                    <li><a href="#"><img src="/img/icon/menu/favorite.svg" alt=""><span>Favoriler</span></a></li>
+                    <li><a href="#"><img src="/img/icon/menu/out.svg" alt=""><span>Oturum Kapat</span></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <!-- Category -->
+    <div class="explore-category-content">
+        <div id="explore-category">
+            <ul>
+                <li>
+                    <img src="/img/icon/navbar/navbar-1.svg" alt="">
+                    <a href="#">Grafik & Tasarım</a>
+                    <div class="explore-seperator"></div>
+                </li>
+                <li>
+                    <img src="/img/icon/navbar/navbar-2.svg" alt="">
+                    <a href="#">İnternet Reklamcılığı</a>
+                    <div class="explore-seperator"></div>
 
+                </li>
+                <li>
+                    <img src="/img/icon/navbar/navbar-3.svg" alt="">
+                    <a href="#">Yazı & Çeviri</a>
+                    <div class="explore-seperator"></div>
+
+                </li>
+                <li>
+                    <img src="/img/icon/navbar/navbar-4.svg" alt="">
+                    <a href="#">Video & Animasyon</a>
+                    <div class="explore-seperator"></div>
+
+                </li>
+                <li>
+                    <img src="/img/icon/navbar/navbar-5.svg" alt="">
+                    <a href="#">Ses & Müzik</a>
+                    <div class="explore-seperator"></div>
+                </li>
+                <li>
+                    <img src="/img/icon/navbar/navbar-6.svg" alt="">
+                    <a href="#">Yazılım & Teknoloji</a>
+                    <div class="explore-seperator"></div>
+                </li>
+                <li>
+                    <img src="/img/icon/navbar/navbar-7.svg" alt="">
+                    <a href="#">İş & Yönetim</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    <!-- FILTER -->
+    <div class="filter">
+        <form action="">
+                <select name="filter-category" id="filter-category">
+                    <option  selected hidden  disabled value="">Kategori</option>
+                    <option value="Front-End">Front-End</option>
+                    <option value="Back-End">Back-End</option>
+                    <option value="Grafik Tasarım">Grafik Tasarım</option>
+                    <option value="Veritabanı">Veritabanı</option>
+                </select>
+
+                <select name="filter-advert-type" id="filter-advert-type">
+                    <option  selected hidden  disabled value="">İlan Türü</option>
+                    <option value="Freelancer">Hizmet Verenler</option>
+                    <option value="Hizmet Bekleyen">Hizmet Bekleyenler</option>
+                </select>
+
+                <select name="filter-price-type" id="filter-price-type">
+                    <option  selected hidden  disabled value="">Fiyat Türü</option>
+                    <option value="Freelancer">Hizmet Verenler</option>
+                    <option value="Hizmet Bekleyen">Hizmet Bekleyenler</option>
+                </select>
+                <label id="min-price-text" for="min-price-textbox">Fiyat Aralığı :</label>
+                <input autocomplete="off" id="min-price-textbox" type="text">
+                <label id="max-price-text" for="max-price-textbox"> - </label>
+                <input autocomplete="off" id="max-price-textbox" type="text" >
+                <button type="submit">Uygula</button>
+        </form>
+    </div>
+    <div class="main">
+        <div class="advert-cards">
+            <!--Sipariş Ver Card-->
+            <div class="advert-card">
+                <div class="advert-card-img">
+                    <img class="advert-card-big-img" src="/img/other/ilan-1.jpg" alt="freelancer ian resmi">
+                    <div class="advert-card-avatar-img">
+                        <img src="/img/avatar/freelancer.png" alt="freelancer logosu">
+                    </div>
+                </div>
+                <div class="advert-card-profile">
+                    <div class="advert-card-profile-name">
+                        <img src="/img/avatar/profile-1.png" alt="profil resmi">
+                        <div class="advert-card-profile-info">
+                            <a href="#">Hasan Dursun</a>
+                            <p>Seslendirme Sanatçısı</p>
+                        </div>
+                    </div>
+                    <div class="advert-card-profile-price">
+                        <p class="advert-card-profile-price-amount">400<span>TL</span></p>
+                        <p class="advert-card-profile-price-type">Dakikalık</p>
+                    </div>
+                </div>
+                <div class="advert-card-text">
+                    <p>Ben profesyonel bir şekilde tüm video ve metinlerinizi seslendirebilirim. </p>
+                </div>
+                <div class="advert-card-button">
+                    <a href="#">
+                        <span>Sipariş Ver</span>
+                        <img src="/img/icon/menu/basket.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!--Teklif Ver Card-->
+            <div class="advert-card">
+                <div class="advert-card-img">
+                    <img class="advert-card-big-img" src="/img/other/ilan-2.jpeg" alt="freelancer ian resmi">
+                    <div class="advert-card-avatar-img">
+                        <img src="/img/avatar/customer.png" alt="freelancer logosu">
+                    </div>
+                </div>
+                <div class="advert-card-profile">
+                    <div class="advert-card-profile-name">
+                        <img src="/img/avatar/profile-1.png" alt="profil resmi">
+                        <div class="advert-card-profile-info">
+                            <a href="#">Leyli Hudayberdiyeva</a>
+                            <p>Halkla İlişkiler Uzmanı</p>
+                        </div>
+                    </div>
+                    <div class="advert-card-profile-price">
+                        <p class="advert-card-profile-price-amount">1000<span>TL</span></p>
+                        <p class="advert-card-profile-price-type">Günlük</p>
+                    </div>
+                </div>
+                <div class="advert-card-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, unde et! Ea a at, accusamus quae beatae doloribus, vitae ipsa, possimus vero dolore quas molestiae! </p>
+                </div>
+                <div class="advert-card-button">
+                    <a href="#">
+                        <span>Teklif Ver</span>
+                        <img src="/img/icon/menu/offer.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
     <!--FOOTER-->
     <div class="footer">
         <div id="footer-top">
