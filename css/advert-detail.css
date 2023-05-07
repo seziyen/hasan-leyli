@@ -1,0 +1,89 @@
+@import url(component.css);
+
+body{
+    background-color: var(--color-white-background);
+}
+
+/*-------------- İlan Başlık Kapsayıcısı --------------- */
+.advert-title-div{
+    padding: 10px 120px ;
+    color: var(--color-blue-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-white);
+    
+}
+.advert-title-div h3{
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--color-blue-dark);
+}
+#advert-title-favorite{
+    display: flex;
+    align-items: center;
+}
+#advert-title-favorite img{
+    width: 40px;
+    height: 40px;
+}
+#advert-title-favorite span{
+    font-weight: 400;
+    font-size: 18px;
+}
+#advert-title-favorite:hover span{
+    text-decoration: underline;
+}
+
+/* ---------------- MAIN DETAIL LEFT -------------------- */
+#advert-detail-main{
+    display: flex;
+    padding: 40px 120px;
+
+}
+
+#advert-detail-left{
+   
+}
+#advert-detail-left-img{
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+#advert-detail-left-img img{
+    width: 660px;
+    height: 360px;
+    border-radius: 10px;
+}
+#advert-detail-left-description{
+    width: 700px;
+    padding: 20px 30px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+
+
+}
+#advert-detail-left-description h2{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-blue-dark);
+    margin-bottom: 15px;
+}
+#advert-detail-left-description p{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-blue-light);
+    text-align: justify;
+}
+
+/* ---------------- MAIN DETAIL RIGHT -------------------- */
+#advert-detail-right{
+    width: 300px;
+    height: 100px;
+    background-color: red;
+}
